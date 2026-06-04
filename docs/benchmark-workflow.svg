@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340">
+  <style>
+    .box { fill:#111827; stroke:#6b7280; stroke-width:2; rx:16; }
+    .text { fill:#e5e7eb; font-family:Inter, Helvetica, Arial, sans-serif; font-size:16px; }
+    .title { fill:#f8fafc; font-size:22px; font-weight:700; }
+    .arrow { stroke:#38bdf8; stroke-width:4; marker-end:url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 Z" fill="#38bdf8" />
+    </marker>
+  </defs>
+  <rect x="30" y="40" width="210" height="80" class="box" />
+  <text x="135" y="70" text-anchor="middle" class="title">Experiment Script</text>
+  <text x="135" y="95" text-anchor="middle" class="text">quantization_compare.py</text>
+  <rect x="320" y="40" width="210" height="80" class="box" />
+  <text x="425" y="70" text-anchor="middle" class="title">Inference Path</text>
+  <text x="425" y="95" text-anchor="middle" class="text">Tokenizer → Model → GPU</text>
+  <rect x="610" y="40" width="210" height="80" class="box" />
+  <text x="715" y="70" text-anchor="middle" class="title">Output</text>
+  <text x="715" y="95" text-anchor="middle" class="text">Generated Text + Metrics</text>
+  <path d="M240,80 L320,80" class="arrow" />
+  <path d="M530,80 L610,80" class="arrow" />
+  <rect x="170" y="170" width="560" height="120" class="box" />
+  <text x="450" y="200" text-anchor="middle" class="title">Benchmark Results</text>
+  <text x="450" y="225" text-anchor="middle" class="text">Time, Memory, Tokens/sec, Context Scaling</text>
+  <text x="450" y="250" text-anchor="middle" class="text">FP16 vs INT8 comparisons</text>
+  <path d="M450,120 L450,170" class="arrow" />
+</svg>

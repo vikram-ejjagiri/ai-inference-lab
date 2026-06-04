@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <style>
+    .box { fill:#1f2937; stroke:#9ca3af; stroke-width:2; rx:18; }
+    .text { fill:#f9fafb; font-family:Inter, Helvetica, Arial, sans-serif; font-size:18px; }
+    .title { fill:#f8fafc; font-size:24px; font-weight:700; }
+    .arrow { stroke:#60a5fa; stroke-width:4; marker-end:url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 Z" fill="#60a5fa" />
+    </marker>
+  </defs>
+  <rect x="20" y="40" width="220" height="90" class="box" />
+  <text x="130" y="75" text-anchor="middle" class="text">Prompt + Input</text>
+  <text x="130" y="100" text-anchor="middle" class="text">Tokenization</text>
+  <rect x="320" y="40" width="220" height="90" class="box" />
+  <text x="430" y="75" text-anchor="middle" class="text">Model Load</text>
+  <text x="430" y="100" text-anchor="middle" class="text">(FP16 / INT8)</text>
+  <rect x="620" y="40" width="220" height="90" class="box" />
+  <text x="730" y="75" text-anchor="middle" class="text">GPU Inference</text>
+  <text x="730" y="100" text-anchor="middle" class="text">Generate Tokens</text>
+  <path d="M240,85 L320,85" class="arrow" />
+  <path d="M540,85 L620,85" class="arrow" />
+  <rect x="220" y="180" width="460" height="130" class="box" />
+  <text x="450" y="220" text-anchor="middle" class="title">Benchmark Metrics</text>
+  <text x="450" y="250" text-anchor="middle" class="text">Load Time · Inference Latency · GPU Memory</text>
+  <text x="450" y="275" text-anchor="middle" class="text">Tokens/sec · Context Scaling</text>
+  <path d="M450,130 L450,180" class="arrow" />
+</svg>
